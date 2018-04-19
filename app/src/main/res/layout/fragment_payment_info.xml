@@ -1,0 +1,261 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sualoodriver.fragments.PaymentInfo_Fragment">
+
+
+    <RadioGroup
+            android:id="@+id/type_of_driver_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_creditcard_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Credit Card Number"
+                android:checked="true"
+                android:layout_margin="10dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textSize="15sp"/>
+
+
+            <RadioButton
+                android:id="@+id/rb_paypal_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="PayPal account"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textSize="15sp"/>
+
+            <RadioButton
+                android:id="@+id/rb_mpesa_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="M-Pesa"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textSize="15sp"/>
+
+            <RadioButton
+                android:id="@+id/rb_sulaoocredit_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Sualoo Credit"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textSize="15sp"/>
+
+
+        </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/ll_credit_card_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/credit_cardno_pay_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Credit Card Number"
+            android:textColorHint="@color/text_color"
+            android:layout_below="@+id/type_of_driver"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:background="@drawable/comment_background"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/card_type_pay_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Credit Card Type"
+            android:textColorHint="@color/text_color"
+            android:layout_below="@+id/type_of_driver"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:background="@drawable/comment_background"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/cvv_no_pay_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CVV Number"
+            android:textColorHint="@color/text_color"
+            android:layout_below="@+id/type_of_driver"
+            android:layout_marginTop="15dp"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:background="@drawable/comment_background"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/exp_date_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Expiration Date"
+            android:textColorHint="@color/text_color"
+            android:layout_below="@+id/type_of_driver"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:background="@drawable/comment_background"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_paypal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/reg_paypal_email_pay_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Registered paypal email"
+            android:textColorHint="@color/text_color"
+            android:layout_below="@+id/type_of_driver"
+            android:layout_marginTop="15dp"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:background="@drawable/comment_background"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_mpesa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/mpesa_accnt_pay_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="M-Pesa Account Number"
+            android:textColorHint="@color/text_color"
+            android:layout_below="@+id/type_of_driver"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:background="@drawable/comment_background"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sualoo_cd_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/sualoo_credit_pay_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sualoo Credit Number"
+            android:textColorHint="@color/text_color"
+            android:layout_below="@+id/type_of_driver"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:background="@drawable/comment_background"
+            android:padding="8dp"/>
+
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pwd_login"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <RelativeLayout
+            android:id="@+id/btn_toggle_pay_reg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/img_tgl_btn_off_pay_reg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/toggle_off"/>
+
+            <ImageView
+                android:id="@+id/img_tgl_btn_on_pay_reg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:background="@drawable/toggle_on"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_remember_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I accept the general terms of use"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/btn_toggle_pay_reg"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_register_me_paymentfrag"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Register Me"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:background="@drawable/text_background"
+        android:gravity="center"/>
+
+</LinearLayout>

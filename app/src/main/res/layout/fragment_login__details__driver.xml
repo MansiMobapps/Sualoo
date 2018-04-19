@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sualoodriver.fragments.Login_Details_Driver_Fragment">
+
+    <EditText
+        android:id="@+id/username_loginfrag_driver_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username or Email"
+        android:textColorHint="@color/text_color"
+        android:layout_below="@+id/type_of_driver"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:background="@drawable/comment_background"
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/create_pwd_loginfrag_driver_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Create password"
+        android:textColorHint="@color/text_color"
+        android:layout_below="@+id/type_of_driver"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:background="@drawable/comment_background"
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/con_pwd_loginfrag_driver_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm your password"
+        android:textColorHint="@color/text_color"
+        android:layout_below="@+id/type_of_driver"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:background="@drawable/comment_background"
+        android:padding="8dp"/>
+
+
+    <TextView
+        android:id="@+id/txt_continue_login_details_driver"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Continue"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:background="@drawable/text_background"
+        android:gravity="center"/>
+
+
+</LinearLayout>

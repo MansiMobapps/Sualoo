@@ -1,0 +1,302 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.sualoodriver.fragments.PersonalInfo_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="15dp">
+
+        <RelativeLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:id="@+id/driver_image_business"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/dr_profile_icon"
+                android:layout_gravity="center"
+                app:siBorderColor="@color/blue"
+                app:siBorderWidth="3dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:orientation="horizontal"
+            android:background="@drawable/text_background">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/upload_icon"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Image"
+                android:layout_centerInParent="true"
+                android:textSize="18sp"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/Com_business_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Company Name"
+            android:textColorHint="@color/text_color"
+            android:layout_below="@+id/type_of_driver"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:background="@drawable/comment_background"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/email_busniss_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email address of the company"
+            android:textColorHint="@color/text_color"
+            android:layout_below="@+id/type_of_driver"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:background="@drawable/comment_background"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/ph_business_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Company Telephone"
+            android:textColorHint="@color/text_color"
+            android:layout_below="@+id/type_of_driver"
+            android:layout_marginTop="15dp"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:background="@drawable/comment_background"
+            android:padding="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Information"
+            android:textColor="@color/dark_sky"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_sky"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/fname_business_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:textColorHint="@color/text_color"
+            android:layout_below="@+id/type_of_driver"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:background="@drawable/comment_background"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/lname_business_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:textColorHint="@color/text_color"
+            android:layout_below="@+id/type_of_driver"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:background="@drawable/comment_background"
+            android:padding="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/comment_background">
+
+            <Spinner
+                android:id="@+id/spinner_type_of_business"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:background="@drawable/shape_drop_down_normal"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address Information"
+            android:textColor="@color/dark_sky"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_sky"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/street_business_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Street"
+            android:textColorHint="@color/text_color"
+            android:layout_below="@+id/type_of_driver"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:background="@drawable/comment_background"
+            android:padding="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/comment_background">
+
+            <Spinner
+                android:id="@+id/spinner_enter_country_business"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:background="@drawable/shape_drop_down_normal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/comment_background">
+
+            <Spinner
+                android:id="@+id/spinner_enter_city_business"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:background="@drawable/shape_drop_down_normal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/comment_background">
+
+            <Spinner
+                android:id="@+id/spinner_enter_town_business"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:background="@drawable/shape_drop_down_normal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/comment_background">
+
+            <Spinner
+                android:id="@+id/spinner_enter_province_business"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:background="@drawable/shape_drop_down_normal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/comment_background">
+
+            <Spinner
+                android:id="@+id/spinner_estimated_pack_business"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="@color/white"
+
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:background="@drawable/shape_drop_down_normal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/comment_background">
+
+            <Spinner
+                android:id="@+id/spinner_no_of_rentals_business"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="@color/white"
+
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:background="@drawable/shape_drop_down_normal"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txt_continue_per_info"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Continue"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/text_background"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
